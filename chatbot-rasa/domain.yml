@@ -1,0 +1,81 @@
+version: "3.0"
+
+intents:
+  - saludar
+  - despedir
+  - afirmar
+  - negar
+  - bot_challenge
+  - que_es_pomodoro
+  - que_es_repeticion_espaciada
+  - que_es_estilos_aprendizaje
+  - que_es_aprendizaje
+  - que_es_estilo_visual
+  - que_es_estilo_auditivo
+  - que_es_estilo_kinestesico
+
+responses:
+  utter_saludar:
+    - text: "Hola! En que puedo ayudarte?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Fue eso de ayuda?"
+
+  utter_happy:
+    - text: "Excelente!"
+
+  utter_despedir:
+    - text: "Adios!"
+
+  utter_iamabot:
+    - text: "Soy un bot funcionando con Rasa :)"
+
+  utter_def_pomodoro:
+    - text: "La técnica Pomodoro es un método para mejorar la administración del tiempo dedicado a una actividad. Fue creado por Francesco Cirillo a fines de la década de 1980. Se basa en usar un temporizador para dividir el tiempo en intervalos fijos, llamados pomodoros, de 25 minutos de actividad, seguidos de 5 minutos de descanso, con pausas más largas cada cuatro pomodoros."
+
+  utter_def_rep_esp:
+    - text: "La repeticion espaciada es una tecnica de aprendizaje y memorizacion que busca que un contenido se aprenda de la forma mas eficiente posible. Basados en estudios del psicologo Hermann Ebbinghaus, los cuales dicen que nuestro conocimiento desaparece en base a una curva del olvido, la repeticion espaciada busca extender esa curva antes de llegar al olvido absoluto por medio de repasos en intervalos de tiempo especificos. Una de las formas mas sencillas de comenzar a utilizar esta tecnica es por medio del software 'anki', el cual es gratuito. "
+
+  utter_def_est_ap:
+    - text: "Un estilo de aprendizaje consiste en qué actividades y sentidos son con los que tendemos a absorber información más fácilmente; ya sea a través de la vista, el oído, el tacto, el habla, la toma de notas o una combinación de estas."
+
+  utter_def_aprendizaje:
+    - text: "El aprendizaje es la forma como los individuos asumen un determinado conocimiento o información y este puede ser desarrollado de manera diferente por diferentes grupos sociales."
+ 
+  utter_def_est_vis:
+    - text: "Ocurre cuando uno tiende a pensar en imágenes y a relacionarlas con ideas y conceptos. Puedes presentar este estilo de aprendizaje si: 
+    •	Presentan dificultades cuando las explicaciones son verbales.
+    •	Eres muy observador.
+    •	Aprendes mejor cuando el material es representado de manera visual.
+    •	Eres capaz de memorizar utilizando patrones, imágenes y colores. 
+    •	Tienes mayor facilidad para recordar imágenes y videos.
+    •	Te cuesta trabajo explicar verbalmente o recordar información verbal.
+    •	Piensan y almacenan la información utilizando imágenes.
+    •	Tienes una inclinación hacia las artes. 
+    •	Tienes una gran imaginación y un fuerte sentido del color."
+ 
+  utter_def_est_aud:
+    - text: "Cuando se tiende a recordar mejor la información siguiendo y rememorando una explicación oral. Puedes presentar este estilo de aprendizaje si te identificas con las siguientes frases: 
+    •	Aprendes fácilmente al prestar atención a lo que dice o narra el profesor. 
+    •	Eres capaz de recordar signos audibles con cambios de tono de voz, entonaciones y acentos. 
+    •	Puedes repetir con habilidad y recordar lo que dice alguien más en una conferencia o en una clase. 
+    •	Se te da bien los exámenes orales y las presentaciones. 
+    •	Eres bueno en relatar relatos, narraciones, historias y cuentos. 
+    •	Te gusta estudiar con música y puedes recordar datos y personas con ella."
+
+  utter_def_est_kin:
+    - text: "Se presenta cuando aprendemos más fácilmente al movernos y tocar las cosas, como cuando caminamos al recitar información o hacemos un experimento manipulando instrumentos de laboratorio.
+    Puedes presentar este estilo si te identificas con las siguientes afirmaciones: 
+    •	Te gusta aprender a través de experiencias, como prácticas en laboratorio, juegos, modelos, incluso representaciones tangentes de lo que estudias, como un globo terráqueo o un esqueleto humano.
+    •	Eres una persona inquieta, que se mueve constantemente al hacer tarea o concentrarse en una actividad. 
+    •	Necesitas involucrarte en lo que estás aprendizaje, de lo contrario, te cuesta mucho y se convierte en algo cansado. 
+    •	Tus movimientos son una extensión de tus pensamientos creativos. 
+    •	Tienes la necesidad de expresarte de forma corporal."
+
+session_config:
+  session_expiration_time: 120
+  carry_over_slots_to_new_session: true

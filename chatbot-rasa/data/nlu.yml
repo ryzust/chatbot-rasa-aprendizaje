@@ -1,0 +1,115 @@
+version: "3.0"
+
+nlu:
+  - intent: saludar
+    examples: |
+      - hey
+      - hola
+      - buenos dias
+      - buenas tardes
+      - buenas noches
+      - como estas?
+      - hola, como estas?
+
+  - intent: despedir
+    examples: |
+      - nos vemos
+      - hasta luego
+      - adios
+      - bye
+
+  - intent: afirmar
+    examples: |
+      - si
+      - s
+      - claro
+      - por supuesto
+      - correcto
+      - suena bien
+      - asi es
+      - afirmativo
+
+  - intent: negar
+    examples: |
+      - no
+      - n
+      - nunca
+      - no lo creo
+      - no creo
+      - en realidad no
+      - no realmente
+      - negativo
+      - jamas
+
+  - intent: bot_challenge
+    examples: |
+      - eres un bot?
+      - eres un robot?
+      - eres humano?
+      - con quien estoy hablando?
+      - con quien hablo?
+
+  - intent: que_es_pomodoro
+    examples: |
+      - que es pomodoro?
+      - que es un pomodoro?
+      - que es la tecnica pomodoro?
+      - en que consiste el metodo de pomodoro?
+      - en que consiste la tecnica de pomodoro?
+      - en que consiste la tecnica pomodoro?
+      - como utilizar la tecnica pomodoro?
+      - como funciona la tecnica pomodoro?
+      - como se usa la tecnica pomodoro?
+
+  - intent: que_es_repeticion_espaciada
+    examples: |
+      - que es la repeticion espaciada?
+      - en que consiste la repeticion espaciada?
+      - como funciona la repeticion espaciada?
+      - como utilizar la repeticion espaciada?
+      - como utilizar la repeticion espaciada
+      - que es la tecnica de repeticion espaciada?
+
+  - intent: que_es_estilos_aprendizaje
+    examples: |
+      - que son los estilos de aprendizaje?
+      - que es un estilo de aprendizaje?
+      - que estilos de aprendizaje existen?
+      - cuales son los estilos de aprendizaje?
+      - estilos de aprendizaje
+      - formas de aprender
+      - cuales son las formas de aprender?
+      - que formas de aprendizaje existen?
+
+  - intent: que_es_aprendizaje
+    examples: |
+      - que es el aprendizaje?
+      - definicion aprendizaje
+      - define aprendizaje
+
+  - intent: que_es_estilo_visual
+    examples: |
+      - cual es el estilo visual?
+      - estilo de aprendizaje visual
+      - en que consiste el estilo visual?
+      - caracteristicas estilo visual
+      - como identificar el aprendizaje visual?
+      - aprendizaje visual
+
+  - intent: que_es_estilo_auditivo
+    examples: |
+      - cual es el estilo auditivo?
+      - estilo de aprendizaje auditivo
+      - en que consiste el estilo auditivo?
+      - caracteristicas estilo auditivo
+      - como identificar el aprendizaje auditivo?
+      - aprendizaje auditivo
+
+  - intent: que_es_estilo_kinestesico
+    examples: |
+      - cual es el estilo kinestesico?
+      - estilo de aprendizaje kinestesico
+      - en que consiste el estilo auditivokinestesico
+      - caracteristicas estilo kinestesico
+      - como identificar el aprendizaje kinestesico?
+      - aprendizaje kinestesico

@@ -1,0 +1,56 @@
+version: "3.0"
+
+stories:
+  - story: saludo
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+
+  - story: preguntar pomodoro
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: que_es_pomodoro
+      - action: utter_def_pomodoro
+
+  - story: preguntar repeticion espaciada
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: que_es_repeticion_espaciada
+      - action: utter_def_rep_esp
+
+  - story: preguntar estilos aprendizaje
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: que_es_estilos_aprendizaje
+      - action: utter_def_est_ap
+
+  - story: preguntar aprendizaje
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: que_es_aprendizaje
+      - action: utter_def_aprendizaje
+
+  - story: preguntar estilo visual
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: que_es_estilo_visual
+      - action: utter_def_est_vis
+
+  - story: preguntar estilo auditivo
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: que_es_estilo_auditivo
+      - action: utter_def_est_aud
+
+  - story: preguntar estilo kinestesico
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: que_es_estilo_kinestesico
+      - action: utter_def_est_kin
