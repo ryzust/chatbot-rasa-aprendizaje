@@ -113,3 +113,20 @@ nlu:
       - caracteristicas estilo kinestesico
       - como identificar el aprendizaje kinestesico?
       - aprendizaje kinestesico
+
+  - intent: hacer_test
+    examples: |
+      - cual es el mi estilo de aprendizaje?
+      - como puedo saber mi estilo de aprendizaje?
+      - que tipo de aprendizaje tengo?
+      - que estilo de aprendizaje tengo?
+      - que tipo de aprendizaje soy?
+      - que estilo de aprendizaje soy?
+      - que tipo de aprendizaje poseo?
+      - que estilo de aprendizaje poseo?
+      - como es mi estilo de aprendizaje?
+      - como se mi estilo de aprendizaje?
+      - hacer test de estilo de aprendizaje
+      - hacer test de tipos de aprendizaje
+      - quiero hacer el test de estilo de aprendizaje
+      - quiero hacer el test de tipo de aprendizaje

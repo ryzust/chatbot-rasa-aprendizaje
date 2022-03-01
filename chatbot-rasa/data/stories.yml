@@ -54,3 +54,13 @@ stories:
       - action: utter_saludar
       - intent: que_es_estilo_kinestesico
       - action: utter_def_est_kin
+
+  - story: saludar y hacer test de estilo
+    steps:
+      - intent: saludar
+      - action: utter_saludar
+      - intent: hacer_test
+      - action: estilo_form
+      - active_loop: estilo_form
+      - active_loop: null
+      - action: submit_estilo_form

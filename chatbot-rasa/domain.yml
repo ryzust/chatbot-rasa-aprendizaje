@@ -13,6 +13,10 @@ intents:
   - que_es_estilo_visual
   - que_es_estilo_auditivo
   - que_es_estilo_kinestesico
+  - hacer_test
+
+actions:
+  - submit_estilo_form
 
 responses:
   utter_saludar:
@@ -76,6 +80,389 @@ responses:
     •	Tus movimientos son una extensión de tus pensamientos creativos. 
     •	Tienes la necesidad de expresarte de forma corporal."
 
+  utter_ask_r1:
+    - text: "Puedo recordar algo si lo digo en voz alta"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r2:
+    - text: "Disfruto aprendiendo cuando tengo a alguien que me explica las cosas"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r3:
+    - text: "Prefiero escuchar la musica para aprenderme la letra en lugar de leerla"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r4:
+    - text: "Escucho musica todo el tiempo"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r5:
+    - text: "Cuando leo en silencio, me digo cada palabra a mi mismo"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r6:
+    - text: "Prefiero seguir instrucciones escritas y no orales"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r7:
+    - text: "Aprendo mejor de dibujos, diagramas y mapas"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r8:
+    - text: "Recuerdo con facilidad lo que veo en la tv, internet, celular o revistas"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r9:
+    - text: "Disfruto la lectura y leo rapidamente"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r10:
+    - text: "Cuando me piden deletrear una palabra, simplemente veo la palabra en mi mente"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r11:
+    - text: "Cuando estudio, me gusta masticar chicle o comer algo"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r12:
+    - text: "Cuando escucho musica prefiero bailar, danzar o brincar"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r13:
+    - text: "Disfruto trabajar con mis manos y hacer manualidades"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r14:
+    - text: "Disfruto estar cerca de otros, me gustan los abrazos y saludos"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
+  utter_ask_r15:
+    - text: "Cuando utilizo nuevo material, me encuentro yo mismo actuando, dibujando y haciendo garabatos"
+      buttons:
+      - title: "Si"
+        payload: /afirmar
+      - title: "No"
+        payload: /negar
+
 session_config:
   session_expiration_time: 120
   carry_over_slots_to_new_session: true
+
+slots:
+  r1:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r1
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r1
+  r2:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r2
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r2
+  r3:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r3
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r3
+  r4:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r4
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r4
+  r5:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r5
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r5
+  r6:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r6
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r6
+  r7:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r7
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r7
+  r8:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r8
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r8
+  r9:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r9
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r9
+  r10:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r10
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r10
+  r11:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r11
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r11
+  r12:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r12
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r12
+  r13:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r13
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r13
+  r14:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r14
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r14
+  r15:
+    type: bool
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: afirmar
+        value: true
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r15
+      - type: from_intent
+        intent: negar
+        value: false
+        conditions:
+        - active_loop: estilo_form
+          requested_slot: r15
+
+forms:
+  estilo_form:
+    required_slots:
+      - r1
+      - r2
+      - r3
+      - r4
+      - r5
+      - r6
+      - r7
+      - r8
+      - r9
+      - r10
+      - r11
+      - r12
+      - r13
+      - r14
+      - r15
+
+    

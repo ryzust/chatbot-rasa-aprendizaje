@@ -10,3 +10,11 @@ rules:
     steps:
       - intent: bot_challenge
       - action: utter_iamabot
+
+  - rule: submit form
+    condition:
+      - active_loop: estilo_form
+    steps:
+      - action: estilo_form
+      - active_loop: null
+      - action: submit_estilo_form
