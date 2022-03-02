@@ -87,6 +87,12 @@ nlu:
       - definicion aprendizaje
       - define aprendizaje
 
+  - intent: que_es_estrategia_aprendizaje
+    examples: |
+      - que es el aprendizaje?
+      - definicion aprendizaje
+      - define aprendizaje
+
   - intent: que_es_estilo_visual
     examples: |
       - cual es el estilo visual?

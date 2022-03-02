@@ -9,6 +9,7 @@ intents:
   - que_es_pomodoro
   - que_es_repeticion_espaciada
   - que_es_estilos_aprendizaje
+  - que_es_estrategia_aprendizaje
   - que_es_aprendizaje
   - que_es_estilo_visual
   - que_es_estilo_auditivo
@@ -79,6 +80,9 @@ responses:
     •	Necesitas involucrarte en lo que estás aprendizaje, de lo contrario, te cuesta mucho y se convierte en algo cansado. 
     •	Tus movimientos son una extensión de tus pensamientos creativos. 
     •	Tienes la necesidad de expresarte de forma corporal."
+  
+  utter_def_estr_ap:
+    - text: "Las estrategias de aprendizaje son una secuencia de operaciones cognoscitivas y procedimentales para procesar información y aprenderla significativamente."
 
   utter_ask_r1:
     - text: "Puedo recordar algo si lo digo en voz alta"

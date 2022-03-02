@@ -21,6 +21,11 @@ stories:
       - intent: que_es_estilos_aprendizaje
       - action: utter_def_est_ap
 
+  - story: preguntar estrategia de aprendizaje
+    steps:
+      - intent: que_es_estrategia_aprendizaje
+      - action: utter_def_estr_ap
+
   - story: preguntar aprendizaje
     steps:
       - intent: que_es_aprendizaje
