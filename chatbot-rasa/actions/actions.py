@@ -15,14 +15,17 @@ def calcular_estilo(respuestas):
 
     max_value = max(puntajes)
     estilo = ""
-    for i in range(0, 3):
-        if puntajes[i] == max_value:
-            if i == 0:
-                estilo = estilo + "Visual"
-            if i == 2:
-                estilo = estilo + " Auditivo"
-            if i == 0:
-                estilo = estilo + " Kinestesico"
+    if max_value == 0:
+        estilo = "No tienes ningun estilo predominante, intenta volver a hacer el test respondiendo con sinceridad"
+    else:
+        for i in range(0, 3):
+            if puntajes[i] == max_value:
+                if i == 0:
+                    estilo = estilo + "Visual"
+                if i == 1:
+                    estilo = estilo + " Auditivo"
+                if i == 2:
+                    estilo = estilo + " Kinestesico"
     return estilo
 
 
@@ -66,7 +69,7 @@ class SubmitEstiloForm(Action):
         respuestas.append(r15)
 
         estilo = calcular_estilo(respuestas)
-
-        dispatcher.utter_message("Tu estilo es: ", estilo)
+        estilo = "Tu estilo es "+estilo
+        dispatcher.utter_message(estilo)
 
         return []
