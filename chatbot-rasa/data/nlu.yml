@@ -90,28 +90,58 @@ nlu:
   - intent: que_es_estilo_visual
     examples: |
       - cual es el estilo visual?
+      - cual es el estilo de aprendizaje visual?
+      - cual es el tipo de aprendizaje visual?
       - estilo de aprendizaje visual
       - en que consiste el estilo visual?
+      - en que consiste el estilo de aprendizaje visual?
+      - en que consiste el tipo de aprendizaje visual?
       - caracteristicas estilo visual
+      - cuales son las caracteristicas del estilo visual?
+      - cuales son las caracteristicas del estilo de aprendizaje visual?
+      - cuales son las caracteristicas del tipo visual?
+      - cuales son las caracteristicas del tipo de aprendizaje visual?
       - como identificar el aprendizaje visual?
+      - como se si mi estilo de aprendizaje es el visual?
+      - como puedo saber si mi estilo de aprendizaje es visual?
       - aprendizaje visual
 
   - intent: que_es_estilo_auditivo
     examples: |
       - cual es el estilo auditivo?
+      - cual es el estilo de aprendizaje auditivo?
+      - cual es el tipo de aprendizaje auditivo?
       - estilo de aprendizaje auditivo
       - en que consiste el estilo auditivo?
+      - en que consiste el estilo de aprendizaje auditivo?
+      - en que consiste el tipo de aprendizaje auditivo?
       - caracteristicas estilo auditivo
+      - cuales son las caracteristicas del estilo auditivo?
+      - cuales son las caracteristicas del estilo de aprendizaje auditivo?
+      - cuales son las caracteristicas del tipo auditivo?
+      - cuales son las caracteristicas del tipo de aprendizaje auditivo?
       - como identificar el aprendizaje auditivo?
+      - como se si mi estilo de aprendizaje es el auditivo?
+      - como puedo saber si mi estilo de aprendizaje es auditivo?
       - aprendizaje auditivo
 
   - intent: que_es_estilo_kinestesico
     examples: |
       - cual es el estilo kinestesico?
+      - cual es el estilo de aprendizaje kinestesico?
+      - cual es el tipo de aprendizaje kinestesico?
       - estilo de aprendizaje kinestesico
-      - en que consiste el estilo auditivokinestesico
+      - en que consiste el estilo kinestesico?
+      - en que consiste el estilo de aprendizaje kinestesico?
+      - en que consiste el tipo de aprendizaje kinestesico?
       - caracteristicas estilo kinestesico
+      - cuales son las caracteristicas del estilo kinestesico?
+      - cuales son las caracteristicas del estilo de aprendizaje kinestesico?
+      - cuales son las caracteristicas del tipo kinestesico?
+      - cuales son las caracteristicas del tipo de aprendizaje kinestesico?
       - como identificar el aprendizaje kinestesico?
+      - como se si mi estilo de aprendizaje es el kinestesico?
+      - como puedo saber si mi estilo de aprendizaje es kinestesico?
       - aprendizaje kinestesico
 
   - intent: hacer_test
