@@ -89,9 +89,10 @@ nlu:
 
   - intent: que_es_estrategia_aprendizaje
     examples: |
-      - que es el aprendizaje?
-      - definicion aprendizaje
-      - define aprendizaje
+      - que son las estrategias de aprendizaje?
+      - que es una estrategia de aprendizaje?
+      - definicion estrategia de aprendizaje?
+      - define estrategia de aprendizaje
 
   - intent: que_es_estilo_visual
     examples: |
